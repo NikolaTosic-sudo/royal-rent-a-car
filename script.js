@@ -337,6 +337,7 @@ function openCar(i) {
     : "";
   renderImage();
   modal.showModal();
+  document.body.classList.add("modal-open");
 }
 function renderImage() {
   modalImage.src = activeCar.images[imageIndex];
@@ -352,9 +353,16 @@ document.querySelector("#nextImage").onclick = () => {
   imageIndex = (imageIndex + 1) % activeCar.images.length;
   renderImage();
 };
-document.querySelector("#closeModal").onclick = () => modal.close();
+
+function closeModal() {
+  modal.close();
+  document.body.classList.remove("modal-open");
+}
+
+document.querySelector("#closeModal").onclick = closeModal;
+
 modal.addEventListener("click", (e) => {
-  if (e.target === modal) modal.close();
+  if (e.target === modal) closeModal();
 });
 document.addEventListener("keydown", (e) => {
   if (!modal.open) return;
