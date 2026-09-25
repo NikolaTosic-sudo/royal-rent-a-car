@@ -134,33 +134,37 @@ const vehicleDetails = {
       "4Motion spaja snagu, stabilnost i udobnost u svakom kilometru. Savršen saputnik za grad, putovanja i avanture koje vas čekaju.",
     features: [
       [
-        "⚡",
+        "engine",
         "Snaga i efikasnost",
         "2.0 TDI 150 KS — savršen balans snage, štednje i pouzdanosti.",
       ],
       [
-        "▲",
+        "mountain",
         "4Motion pogon",
         "Sigurna vožnja u svim uslovima, bez kompromisa — na svakom putu.",
       ],
       [
-        "▰",
+        "seat",
         "Udobnost premium",
         "Prostrana kabina, kvalitetna izrada i maksimalan komfor na svakom putovanju.",
       ],
       [
-        "❄",
+        "snowflake",
         "3 zone klima",
         "Savršena temperatura za sve, bez obzira na destinaciju.",
       ],
       [
-        "◇",
+        "shield",
         "Sigurnost na prvom mjestu",
         "Napredni sistemi asistencije za bezbrižnu vožnju.",
       ],
-      ["⌘", "Manuel mjenjač", "Potpuna kontrola i užitak u pravoj vožnji."],
       [
-        "⛽",
+        "gearbox",
+        "Manuel mjenjač",
+        "Potpuna kontrola i užitak u pravoj vožnji.",
+      ],
+      [
+        "fuel",
         "Ekonomičan izbor",
         "Niska potrošnja, više kilometara, manje brige.",
       ],
@@ -170,41 +174,49 @@ const vehicleDetails = {
     description: "Savrsen izbor za porodice, prijatelje i poslovna putovanja.",
     features: [
       [
-        "⚡",
+        "seat",
         "7+1 Udobnih Sjedista",
         "Dovoljno mjesta za sve putnike i prtljag.",
       ],
-      ["⚙", "Manuel Mjenjac", "Potpuna kontrola. Ekonomicna voznja"],
-      ["▰", "Veliki Prtljaznik", "Vise prostora za sve sto vam je potrebno."],
-      ["❄", "Klima uređaj", "Prijatna voznja u svim uslovima"],
-      ["◇", "Siguran Put", "Pouzdanost na prvom mjestu"],
-      ["⛽", "Ekonomičan", "Mali potrosac. Veliki ucinak"],
+      [
+        "luggage",
+        "Veliki Prtljaznik",
+        "Vise prostora za sve sto vam je potrebno.",
+      ],
+      ["snowflake", "Klima uređaj", "Prijatna voznja u svim uslovima"],
+      ["shield", "Siguran Put", "Pouzdanost na prvom mjestu"],
+      ["gearbox", "Manuel Mjenjac", "Potpuna kontrola. Ekonomicna voznja"],
+      ["fuel", "Ekonomičan", "Mali potrosac. Veliki ucinak"],
     ],
   },
   "Audi A5 Sportback": {
     description:
       "Luksuz koji se vidi. Komfor koji se osjeca. Performanse koje se pamte.",
     features: [
-      ["▰", "Automatik", "Za lakocu i uzitak u svakoj voznji."],
+      ["gearbox", "Automatik", "Za lakocu i uzitak u svakoj voznji."],
       [
-        "❄",
+        "sports-car",
         "Sportback dizajn",
         "Savrsen spoj elegancije i sportskog karaktera.",
       ],
-      ["◇", "Premium oprema", "Vrhunska udobnost na svakom putu"],
-      ["⛽", "Maksimalan uzitak u voznji", "Performanse koje odusevljavaju"],
+      ["diamond", "Premium oprema", "Vrhunska udobnost na svakom putu"],
+      [
+        "steering-wheel",
+        "Maksimalan uzitak u voznji",
+        "Performanse koje odusevljavaju",
+      ],
     ],
   },
   "Mercedes B Klasa": {
     description:
       "Savrsen spoj komfora, sigurnosti i elegancije. Idealna za grad, putovanja i poslovne obaveze.",
     features: [
-      ["⚡", "Vrhunski komfor", "Prostrana i udovna unutrasnjost"],
-      ["⚙", "Automatik mjenjač", "Lagano, sigurno i bez stresa"],
-      ["⛽", "Ekonomicna potrosnja", "Vise kilometara, manje brige"],
-      ["❄", "Klima uređaj", "Savrsena temperatura u svakoj voznji"],
+      ["seat", "Vrhunski komfor", "Prostrana i udovna unutrasnjost"],
+      ["gearbox", "Automatik mjenjač", "Lagano, sigurno i bez stresa"],
+      ["fuel", "Ekonomicna potrosnja", "Vise kilometara, manje brige"],
+      ["snowflake", "Klima uređaj", "Savrsena temperatura u svakoj voznji"],
       [
-        "◇",
+        "shield",
         "Sigurnost na prvom mjestu",
         "Pouzdanost koju osjetite u svakom trenutku",
       ],
@@ -215,22 +227,22 @@ const vehicleDetails = {
       "Nije vazno kuda ides. Vazno je da stignes. Planine, stijene, blato ili snijeg - Pajero ide tamo gdje drugi staju. Snaga. Pouzdanost. Sloboda. Tvoj teren. Tvoja pravila",
     features: [
       [
-        "⚡",
+        "mountain",
         "Spreman za svaki teren",
         "Planina, suma, blato, snijeg ili pijesak.",
       ],
       [
-        "⚙",
+        "shield",
         "Snaga i Pouzdanost",
         "Mitsubishi kvalitet na koji mozes racunati.",
       ],
-      ["▲", "Pravi 4x4 Sistem", "Maksimalna kontrola na svakom terenu."],
+      ["4x4", "Pravi 4x4 Sistem", "Maksimalna kontrola na svakom terenu."],
       [
-        "▰",
+        "seat",
         "Udobnost na svakom putu",
         "Prostran, komforan i spreman za avanturu.",
       ],
-      ["❄", "Klima uređaj", "Komfor bez obzira na godisnje doba."],
+      ["snowflake", "Klima uređaj", "Komfor bez obzira na godisnje doba."],
     ],
   },
   "Peugeot 308 Cabriolet": {
@@ -238,46 +250,54 @@ const vehicleDetails = {
       "Osjeti slobodu, sunce i vjetar. Otvori put avanturi i stvori nezaboravne uspomene.",
     features: [
       [
-        "⚡",
+        "wind",
         "Vjetar u kosi, brige u nazad",
         "Uzivaj u svakom trenutku otvorenog neba.",
       ],
-      ["⚙", "Sunce na licu, osmijeh na usnama", "Osjeti ljeto. Osjeti zivot."],
       [
-        "▲",
+        "sun",
+        "Sunce na licu, osmijeh na usnama",
+        "Osjeti ljeto. Osjeti zivot.",
+      ],
+      [
+        "mountain",
         "Za vikende, za uspomene",
         "Savrsen saputnik za nezaboravne avanture.",
       ],
-      ["▰", "Udoban i praktican", "Komfor koji prati tvoj sgtil zivota."],
-      ["◇", "Siguran put, bez kompromisa", "Pouzdanost na prvom mjestu."],
+      ["seat", "Udoban i praktican", "Komfor koji prati tvoj sgtil zivota."],
+      ["shield", "Siguran put, bez kompromisa", "Pouzdanost na prvom mjestu."],
     ],
   },
   "Jeep Grand Cherokee": {
     description:
       "Osjeti slobodu, sunce i vjetar. Otvori put avanturi i stvori nezaboravne uspomene.",
     features: [
-      ["⚡", "Snaga", "Koja ovaja planine."],
-      ["⚙", "Komfor", "Koji osvaja kilometre."],
-      ["▲", "Prestiz", "Koji osvaja poglede."],
+      ["mountain", "Snaga", "Koja ovaja planine."],
+      ["seat", "Komfor", "Koji osvaja kilometre."],
+      ["diamond", "Prestiz", "Koji osvaja poglede."],
     ],
   },
   "Peugeot 5008": {
     description: "Prostor. Komfor. Sloboda. Za cijelu prodicu.",
     features: [
       [
-        "⚡",
+        "seat",
         "7 udobnih sjedista",
         "Dovoljno prostora za cijelu porodicu i prijatelje.",
       ],
-      ["⚙", "Veliki prtljaznik", "Vise prostora za sve sto vam je potrebno."],
       [
-        "▲",
+        "luggage",
+        "Veliki prtljaznik",
+        "Vise prostora za sve sto vam je potrebno.",
+      ],
+      [
+        "shield",
         "Maksimalna sigurnost",
         "Pouzdan automobil za bezbrizana putovanja.",
       ],
-      ["▰", "Klima uređaj", "Komforna voznja u svim uslovima."],
+      ["snowflake", "Klima uređaj", "Komforna voznja u svim uslovima."],
       [
-        "◇",
+        "road",
         "Idealan za sva putovanja",
         "Grad, planina, more - uvijek pravi izbor.",
       ],
@@ -288,18 +308,22 @@ const vehicleDetails = {
       "Spusti krov, pokreni motor i prepusti se osjecaju koji se ne moze opisati. Svaki kilometar - novo iskustvo. Svaka voznja - tvoj film.",
     features: [
       [
-        "⚡",
+        "wind",
         "Vjetar u kosi, brige u nazad",
         "Uzivaj u svakom trenutku otvorenog neba.",
       ],
-      ["⚙", "Sunce na licu, osmijeh na usnama", "Osjeti ljeto. Osjeti zivot."],
       [
-        "▲",
+        "sun",
+        "Sunce na licu, osmijeh na usnama",
+        "Osjeti ljeto. Osjeti zivot.",
+      ],
+      [
+        "mountain",
         "Za vikende, za uspomene",
         "Savrsen saputnik za nezaboravne avanture.",
       ],
-      ["▰", "Udoban i praktican", "Komfor koji prati tvoj sgtil zivota."],
-      ["◇", "Siguran put, bez kompromisa", "Pouzdanost na prvom mjestu."],
+      ["seat", "Udoban i praktican", "Komfor koji prati tvoj sgtil zivota."],
+      ["shield", "Siguran put, bez kompromisa", "Pouzdanost na prvom mjestu."],
     ],
   },
 };
@@ -342,7 +366,7 @@ function openCar(i) {
     ? extra.features
         .map(
           ([icon, title, text]) =>
-            `<div class="feature-item"><div class="feature-icon">${icon}</div><div><h4>${title}</h4><p>${text}</p></div></div>`,
+            `<div class="feature-item"><img src="./images/icons/${icon}.svg" alt="${activeCar.name}" class="feature-icon" /><div><h4>${title}</h4><p>${text}</p></div></div>`,
         )
         .join("")
     : "";

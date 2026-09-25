@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Put">
+  <path d="M22 8h20l15 48H7L22 8z" fill="#D9A514"/>
+  <g fill="#0B0B0B">
+    <rect x="30" y="12" width="4" height="9" rx="1"/>
+    <rect x="30" y="26" width="4" height="10" rx="1"/>
+    <rect x="30" y="42" width="4" height="11" rx="1"/>
+  </g>
+</svg>

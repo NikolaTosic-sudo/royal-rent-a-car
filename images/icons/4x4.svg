@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="4x4 pogon">
+  <g fill="#D9A514">
+    <!-- axles -->
+    <rect x="14" y="14" width="36" height="4" rx="2"/>
+    <rect x="14" y="46" width="36" height="4" rx="2"/>
+
+    <!-- center driveshaft -->
+    <rect x="30" y="17" width="4" height="30" rx="2"/>
+
+    <!-- differential -->
+    <rect x="26" y="27" width="12" height="10" rx="2"/>
+
+    <!-- wheels -->
+    <rect x="7" y="9" width="10" height="14" rx="2"/>
+    <rect x="47" y="9" width="10" height="14" rx="2"/>
+    <rect x="7" y="41" width="10" height="14" rx="2"/>
+    <rect x="47" y="41" width="10" height="14" rx="2"/>
+  </g>
+
+  <!-- small negative-space details like the reference -->
+  <g fill="#0B0B0B">
+    <rect x="10" y="12" width="4" height="8" rx="1"/>
+    <rect x="50" y="12" width="4" height="8" rx="1"/>
+    <rect x="10" y="44" width="4" height="8" rx="1"/>
+    <rect x="50" y="44" width="4" height="8" rx="1"/>
+    <circle cx="32" cy="32" r="2.5"/>
+  </g>
+</svg>
