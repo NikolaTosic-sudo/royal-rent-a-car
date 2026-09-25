@@ -1,61 +1,94 @@
 const cars = [
   {
-    name: "Mercedes-Benz C-Class",
-    subtitle: "Elegant, comfortable and ready for the coast.",
+    name: "Volkswagen Tiguan",
+    subtitle: "Mjesto gdje komfor susrece snagu",
     images: [
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=85",
       "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1400&q=85",
     ],
     specs: {
-      Mjenjač: "Automatik",
+      Mjenjač: "Manuel",
       Gorivo: "Dizel",
-      Sjedišta: "5",
+      Sjedišta: "7",
       Klasa: "Premium",
     },
   },
   {
-    name: "BMW 5 Series",
-    subtitle: "Business-class comfort with a sporty character.",
+    name: "Peugeot Expert",
+    subtitle: "Prostor za sve. Komfor za sve. Putovanje za pamcenje.",
     images: [
       "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=85",
       "https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?auto=format&fit=crop&w=1400&q=85",
     ],
     specs: {
-      Mjenjač: "Automatik",
+      Mjenjač: "Manuel",
       Gorivo: "Dizel",
-      Sjedišta: "5",
+      Sjedišta: "7+1",
       Klasa: "Premium",
     },
   },
   {
-    name: "Audi A6",
-    subtitle: "Refined comfort for long drives across Montenegro.",
+    name: "Audi A5 Sportback",
+    subtitle: "Drive The Difference",
     images: [
       "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=85",
       "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?auto=format&fit=crop&w=1400&q=85",
     ],
     specs: {
       Mjenjač: "Automatik",
+      Gorivo: "Benzin",
+      Sjedišta: "5",
+      Klasa: "Premium",
+    },
+  },
+  {
+    name: "Mercedes B Klasa",
+    subtitle: "Putuj pametno, vozi sa stilom.",
+    images: [
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=85",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=85",
+    ],
+    specs: {
+      Mjenjač: "Automatik",
       Gorivo: "Dizel",
       Sjedišta: "5",
       Klasa: "Premium",
     },
   },
   {
-    name: "Volkswagen Tiguan",
-    subtitle: "Allspace 4Motion · spreman za grad, put i avanturu.",
-    images: [
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=85",
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=85",
-    ],
-    specs: { Mjenjač: "Manuel", Gorivo: "Dizel", Sjedišta: "5", Klasa: "SUV" },
-  },
-  {
-    name: "Range Rover Evoque",
-    subtitle: "Compact luxury SUV with unmistakable presence.",
+    name: "Mitsubishi Pajero 4x4",
+    subtitle: "Off Road King of Jungle. No Limits. Nema Prepreka.",
     images: [
       "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=85",
       "https://images.unsplash.com/photo-1539799139339-50c5fe1e2b1b?auto=format&fit=crop&w=1400&q=85",
+    ],
+    specs: {
+      Mjenjač: "Automatik 4x4",
+      Gorivo: "Benzin",
+      Sjedišta: "5",
+      Klasa: "Luxury SUV",
+    },
+  },
+  {
+    name: "Peugeot 308 Cabriolet",
+    subtitle: "Uzivaj u voznji Cabrioletom po Crnoj Gori",
+    images: [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=85",
+      "https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1400&q=85",
+    ],
+    specs: {
+      Mjenjač: "Manuel",
+      Gorivo: "Dizel",
+      Sjedišta: "5",
+      Klasa: "Cabriolet",
+    },
+  },
+  {
+    name: "Jeep Grand Cherokee",
+    subtitle: "Ne vozis put. Vladas njime.",
+    images: [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=85",
+      "https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1400&q=85",
     ],
     specs: {
       Mjenjač: "Automatik",
@@ -65,8 +98,8 @@ const cars = [
     },
   },
   {
-    name: "Mercedes-Benz GLC",
-    subtitle: "Premium SUV comfort for every destination.",
+    name: "Peugeot 5008",
+    subtitle: "7 Seater",
     images: [
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=85",
       "https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1400&q=85",
@@ -74,121 +107,31 @@ const cars = [
     specs: {
       Mjenjač: "Automatik",
       Gorivo: "Dizel",
+      Sjedišta: "7",
+      Klasa: "MPV",
+    },
+  },
+  {
+    name: "Renault Megane Coupe Cabriolet",
+    subtitle: "Zivot je prekratak za obicne voznje",
+    images: [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=85",
+      "https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1400&q=85",
+    ],
+    specs: {
+      Mjenjač: "Manuel",
+      Gorivo: "Dizel",
       Sjedišta: "5",
-      Klasa: "SUV",
+      Klasa: "Cabriolet",
     },
   },
 ];
 
 // Detaljni opis za svako vozilo. Tekst i brojeve slobodno zamijeni stvarnim podacima.
 const vehicleDetails = {
-  "Mercedes-Benz C-Class": {
-    description:
-      "Mercedes-Benz C-Class spaja elegantan dizajn, udobnost i sigurnost za vožnju kroz grad, obalu i duža putovanja.",
-    features: [
-      [
-        "⚡",
-        "Snaga i efikasnost",
-        "Pouzdan dizel motor pruža odličan balans performansi i ekonomične potrošnje.",
-      ],
-      [
-        "⚙",
-        "Automatski mjenjač",
-        "Glatke promjene brzina i opuštena vožnja u gradu i na otvorenom putu.",
-      ],
-      [
-        "▰",
-        "Premium udobnost",
-        "Kvalitetna unutrašnjost i udobna sjedišta za prijatno putovanje.",
-      ],
-      ["❄", "Klima uređaj", "Ugodna temperatura tokom cijelog putovanja."],
-      [
-        "◇",
-        "Sigurnost",
-        "Savremeni sistemi pomoći vozaču za sigurniju i bezbrižniju vožnju.",
-      ],
-      [
-        "⛽",
-        "Ekonomičan izbor",
-        "Efikasan motor za više kilometara uz manju potrošnju.",
-      ],
-    ],
-  },
-  "BMW 5 Series": {
-    description:
-      "BMW Serije 5 donosi poslovnu udobnost, prepoznatljivu dinamiku i dovoljno prostora za duža putovanja po Crnoj Gori.",
-    features: [
-      [
-        "⚡",
-        "Performanse",
-        "Snažan i elastičan motor za sigurna preticanja i udobnu vožnju.",
-      ],
-      [
-        "⚙",
-        "Automatski mjenjač",
-        "Brz i uglađen automatski mjenjač za maksimalnu udobnost.",
-      ],
-      [
-        "▰",
-        "Udobnost premium",
-        "Prostrana kabina i kvalitetni materijali za vozača i putnike.",
-      ],
-      [
-        "❄",
-        "Klima uređaj",
-        "Komforna temperatura bez obzira na sezonu i destinaciju.",
-      ],
-      [
-        "◇",
-        "Sigurnost na prvom mjestu",
-        "Napredna elektronika i sistemi asistencije pomažu u svakodnevnoj vožnji.",
-      ],
-      [
-        "⛽",
-        "Odličan za putovanja",
-        "Komfor, stabilnost i ekonomičnost na dužim relacijama.",
-      ],
-    ],
-  },
-  "Audi A6": {
-    description:
-      "Audi A6 je udoban i sofisticiran izbor za putnike koji žele mirnu vožnju, premium enterijer i dovoljno prostora za prtljag.",
-    features: [
-      [
-        "⚡",
-        "Snaga i efikasnost",
-        "Dizel motor kombinuje snažan odziv i racionalnu potrošnju.",
-      ],
-      [
-        "⚙",
-        "Automatski mjenjač",
-        "Jednostavna i udobna vožnja u svim uslovima.",
-      ],
-      [
-        "▰",
-        "Prostrana kabina",
-        "Dovoljno mjesta za pet putnika i komfor na dužim putovanjima.",
-      ],
-      [
-        "❄",
-        "Klima uređaj",
-        "Prijatna temperatura u kabini tokom cijele vožnje.",
-      ],
-      [
-        "◇",
-        "Stabilnost i sigurnost",
-        "Sigurno ponašanje na autoputu, magistrali i gradskim ulicama.",
-      ],
-      [
-        "⛽",
-        "Putujte dalje",
-        "Odličan izbor za obilazak Crne Gore uz dobar odnos komfora i potrošnje.",
-      ],
-    ],
-  },
   "Volkswagen Tiguan": {
     description:
-      "Tiguan Allspace 4Motion spaja snagu, stabilnost i udobnost u svakom kilometru. Savršen saputnik za grad, putovanja i avanture koje vas čekaju.",
+      "4Motion spaja snagu, stabilnost i udobnost u svakom kilometru. Savršen saputnik za grad, putovanja i avanture koje vas čekaju.",
     features: [
       [
         "⚡",
@@ -223,72 +166,140 @@ const vehicleDetails = {
       ],
     ],
   },
-  "Range Rover Evoque": {
-    description:
-      "Range Rover Evoque kombinuje luksuz, kompaktne SUV dimenzije i upečatljiv dizajn — idealan za grad, obalu i izlete.",
+  "Peugeot Expert": {
+    description: "Savrsen izbor za porodice, prijatelje i poslovna putovanja.",
     features: [
       [
         "⚡",
-        "Snažan karakter",
-        "Motor pruža siguran odziv i dovoljno snage za različite uslove vožnje.",
+        "7+1 Udobnih Sjedista",
+        "Dovoljno mjesta za sve putnike i prtljag.",
       ],
-      [
-        "⚙",
-        "Automatski mjenjač",
-        "Udobna i jednostavna vožnja bez nepotrebnog napora.",
-      ],
-      [
-        "▲",
-        "SUV sposobnost",
-        "Viša pozicija sjedenja i stabilnost daju dodatnu sigurnost na putu.",
-      ],
-      [
-        "▰",
-        "Luksuzna kabina",
-        "Premium osjećaj, udobna sjedišta i moderan enterijer.",
-      ],
-      [
-        "❄",
-        "Klima uređaj",
-        "Komforna kabina i tokom najtoplijih ljetnjih dana.",
-      ],
-      [
-        "◇",
-        "Sigurnost",
-        "Sistemi pomoći vozaču doprinose sigurnoj i opuštenoj vožnji.",
-      ],
+      ["⚙", "Manuel Mjenjac", "Potpuna kontrola. Ekonomicna voznja"],
+      ["▰", "Veliki Prtljaznik", "Vise prostora za sve sto vam je potrebno."],
+      ["❄", "Klima uređaj", "Prijatna voznja u svim uslovima"],
+      ["◇", "Siguran Put", "Pouzdanost na prvom mjestu"],
+      ["⛽", "Ekonomičan", "Mali potrosac. Veliki ucinak"],
     ],
   },
-  "Mercedes-Benz GLC": {
+  "Audi A5 Sportback": {
     description:
-      "Mercedes-Benz GLC nudi premium udobnost SUV-a, prostranu kabinu i elegantnu vožnju za grad, aerodromski transfer ili putovanje.",
+      "Luksuz koji se vidi. Komfor koji se osjeca. Performanse koje se pamte.",
     features: [
+      ["▰", "Automatik", "Za lakocu i uzitak u svakoj voznji."],
       [
-        "⚡",
-        "Snaga i efikasnost",
-        "Pouzdan motor pruža snagu kada je potrebna uz razumnu potrošnju.",
+        "❄",
+        "Sportback dizajn",
+        "Savrsen spoj elegancije i sportskog karaktera.",
       ],
-      [
-        "⚙",
-        "Automatski mjenjač",
-        "Udobna promjena brzina i lagana vožnja na svim relacijama.",
-      ],
-      [
-        "▲",
-        "SUV komfor",
-        "Povišena pozicija sjedenja, dobra preglednost i stabilnost.",
-      ],
-      [
-        "▰",
-        "Premium enterijer",
-        "Kvalitetna završna obrada i dovoljno prostora za putnike i prtljag.",
-      ],
-      ["❄", "Klima uređaj", "Prijatna temperatura za vozača i putnike."],
+      ["◇", "Premium oprema", "Vrhunska udobnost na svakom putu"],
+      ["⛽", "Maksimalan uzitak u voznji", "Performanse koje odusevljavaju"],
+    ],
+  },
+  "Mercedes B Klasa": {
+    description:
+      "Savrsen spoj komfora, sigurnosti i elegancije. Idealna za grad, putovanja i poslovne obaveze.",
+    features: [
+      ["⚡", "Vrhunski komfor", "Prostrana i udovna unutrasnjost"],
+      ["⚙", "Automatik mjenjač", "Lagano, sigurno i bez stresa"],
+      ["⛽", "Ekonomicna potrosnja", "Vise kilometara, manje brige"],
+      ["❄", "Klima uređaj", "Savrsena temperatura u svakoj voznji"],
       [
         "◇",
         "Sigurnost na prvom mjestu",
-        "Savremeni sistemi asistencije za mirnije i sigurnije putovanje.",
+        "Pouzdanost koju osjetite u svakom trenutku",
       ],
+    ],
+  },
+  "Mitsubishi Pajero 4x4": {
+    description:
+      "Nije vazno kuda ides. Vazno je da stignes. Planine, stijene, blato ili snijeg - Pajero ide tamo gdje drugi staju. Snaga. Pouzdanost. Sloboda. Tvoj teren. Tvoja pravila",
+    features: [
+      [
+        "⚡",
+        "Spreman za svaki teren",
+        "Planina, suma, blato, snijeg ili pijesak.",
+      ],
+      [
+        "⚙",
+        "Snaga i Pouzdanost",
+        "Mitsubishi kvalitet na koji mozes racunati.",
+      ],
+      ["▲", "Pravi 4x4 Sistem", "Maksimalna kontrola na svakom terenu."],
+      [
+        "▰",
+        "Udobnost na svakom putu",
+        "Prostran, komforan i spreman za avanturu.",
+      ],
+      ["❄", "Klima uređaj", "Komfor bez obzira na godisnje doba."],
+    ],
+  },
+  "Peugeot 308 Cabriolet": {
+    description:
+      "Osjeti slobodu, sunce i vjetar. Otvori put avanturi i stvori nezaboravne uspomene.",
+    features: [
+      [
+        "⚡",
+        "Vjetar u kosi, brige u nazad",
+        "Uzivaj u svakom trenutku otvorenog neba.",
+      ],
+      ["⚙", "Sunce na licu, osmijeh na usnama", "Osjeti ljeto. Osjeti zivot."],
+      [
+        "▲",
+        "Za vikende, za uspomene",
+        "Savrsen saputnik za nezaboravne avanture.",
+      ],
+      ["▰", "Udoban i praktican", "Komfor koji prati tvoj sgtil zivota."],
+      ["◇", "Siguran put, bez kompromisa", "Pouzdanost na prvom mjestu."],
+    ],
+  },
+  "Jeep Grand Cherokee": {
+    description:
+      "Osjeti slobodu, sunce i vjetar. Otvori put avanturi i stvori nezaboravne uspomene.",
+    features: [
+      ["⚡", "Snaga", "Koja ovaja planine."],
+      ["⚙", "Komfor", "Koji osvaja kilometre."],
+      ["▲", "Prestiz", "Koji osvaja poglede."],
+    ],
+  },
+  "Peugeot 5008": {
+    description: "Prostor. Komfor. Sloboda. Za cijelu prodicu.",
+    features: [
+      [
+        "⚡",
+        "7 udobnih sjedista",
+        "Dovoljno prostora za cijelu porodicu i prijatelje.",
+      ],
+      ["⚙", "Veliki prtljaznik", "Vise prostora za sve sto vam je potrebno."],
+      [
+        "▲",
+        "Maksimalna sigurnost",
+        "Pouzdan automobil za bezbrizana putovanja.",
+      ],
+      ["▰", "Klima uređaj", "Komforna voznja u svim uslovima."],
+      [
+        "◇",
+        "Idealan za sva putovanja",
+        "Grad, planina, more - uvijek pravi izbor.",
+      ],
+    ],
+  },
+  "Renault Megane Coupe Cabriolet": {
+    description:
+      "Spusti krov, pokreni motor i prepusti se osjecaju koji se ne moze opisati. Svaki kilometar - novo iskustvo. Svaka voznja - tvoj film.",
+    features: [
+      [
+        "⚡",
+        "Vjetar u kosi, brige u nazad",
+        "Uzivaj u svakom trenutku otvorenog neba.",
+      ],
+      ["⚙", "Sunce na licu, osmijeh na usnama", "Osjeti ljeto. Osjeti zivot."],
+      [
+        "▲",
+        "Za vikende, za uspomene",
+        "Savrsen saputnik za nezaboravne avanture.",
+      ],
+      ["▰", "Udoban i praktican", "Komfor koji prati tvoj sgtil zivota."],
+      ["◇", "Siguran put, bez kompromisa", "Pouzdanost na prvom mjestu."],
     ],
   },
 };
