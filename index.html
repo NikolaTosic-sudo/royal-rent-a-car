@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Royal Rent a Car Montenegro — premium car rental fleet." />
+  <title>Royal Rent a Car Montenegro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Royal Rent a Car home">
+      <span class="crown">♛</span>
+      <span>ROYAL</span>
+      <small>RENT A CAR · MONTENEGRO</small>
+    </a>
+    <a class="instagram" href="https://www.instagram.com/royal_rent_a_car_montenegro/" target="_blank" rel="noreferrer">Instagram ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">MONTENEGRO</p>
+      <h1>Choose your<br><em>Royal ride.</em></h1>
+      <p class="hero-copy">Pogledaj našu ponudu. Klikni na vozilo za galeriju, opis i detalje.</p>
+      <a class="scroll" href="#fleet">Pogledaj vozila ↓</a>
+    </section>
+
+    <section class="fleet" id="fleet">
+      <div class="section-head">
+        <div><p class="eyebrow">NAŠA PONUDA</p><h2>Vozila</h2></div>
+        <span id="vehicleCount"></span>
+      </div>
+      <div class="grid" id="vehicleGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="brand footer-brand"><span class="crown">♛</span><span>ROYAL</span><small>RENT A CAR · MONTENEGRO</small></div>
+      <p class="footer-tagline">Više od vozila. Ključ za slobodu.<br><strong>Kreni gdje god želiš. Doživi više.</strong></p>
+    </div>
+    <div class="footer-contact">
+      <p class="footer-label">REZERVIŠI NA VRIJEME!</p>
+      <a href="tel:+38200000000">☎ <span>+382 00 000 000</span></a>
+      <a href="viber://chat?number=%2B38200000000">VIBER <span>+382 00 000 000</span></a>
+      <a href="https://wa.me/38200000000" target="_blank" rel="noreferrer">WHATSAPP <span>+382 00 000 000</span></a>
+      <a href="https://www.instagram.com/royal_rent_a_car_montenegro/" target="_blank" rel="noreferrer">INSTAGRAM <span>@royal_rent_a_car_montenegro ↗</span></a>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="carModal">
+    <button class="close" id="closeModal" aria-label="Close">×</button>
+    <div class="modal-grid">
+      <div class="gallery">
+        <img id="modalImage" src="" alt="" />
+        <button class="gallery-btn prev" id="prevImage" aria-label="Previous image">←</button>
+        <button class="gallery-btn next" id="nextImage" aria-label="Next image">→</button>
+        <div class="counter" id="imageCounter"></div>
+      </div>
+      <div class="details">
+        <p class="eyebrow">ROYAL PONUDA</p>
+        <h2 id="modalName"></h2>
+        <p id="modalSubtitle" class="subtitle"></p>
+        <div class="specs" id="modalSpecs"></div>
+        <div class="car-description" id="modalDescription"></div>
+        <div class="feature-list" id="modalFeatures"></div>
+        <div class="modal-contact"><a class="contact-cta" href="https://wa.me/38200000000" target="_blank" rel="noreferrer">WhatsApp</a><a class="contact-cta secondary" href="viber://chat?number=%2B38200000000">Viber</a></div><a class="ig-cta" href="https://www.instagram.com/royal_rent_a_car_montenegro/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
